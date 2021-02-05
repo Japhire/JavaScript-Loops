@@ -19,23 +19,38 @@ let userNum = prompt("Guess a number between 1 and 100");
 
 console.log(randomNum)
 
-for ( let i = 4; i > 0; i-- ) {
+
+    for ( let i = 4; i > 0; i-- ) {
+        if ( userNum == randomNum ) {
+            alert(`You guessed correctly! Congrats!`);
+            break
+        } else if ( userNum > randomNum ){
+            alert(`You guessed incorrectly, your guess was too high. you have ${i} tries left to get it right.`);
+            userNum = prompt("Guess a number between 1 and 100");
+        } else if ( userNum < randomNum) {
+            alert(`You guessed incorrectly, your guess was too low. you have ${i} tries left to get it right.`);
+            userNum = prompt("Guess a number between 1 and 100");
+        }
+    }
+
+
+
+
+
+
+
+
+
+/*for ( let i = 4; i > 0; i-- ) {
     if ( userNum == randomNum ) {
         alert(`You guessed correctly! Congrats!`);
         break
-    } else{
-        alert(`You guessed incorrectly, you have ${i} tries left to get it right.`);
+    } else if ( userNum > randomNum){
+        alert(`You guessed incorrectly, your guess was to high. You have ${i} tries left to get it right.`);
+        userNum = prompt(" Guess a number between 1 and 100"); 
+    }else if ( userNum < randomNum){
+        alert(`You guessed incorrectly, your guess was to low, you have ${i} tries left to get it right.`);
         userNum = prompt("Guess a number between 1 and 100");
     }
 }
-    else if ( userNum > randomNum)
-    {
-        alert(`You guessed incorectly, your guess was to high. You have ${i} tries left to get it right.`);
-        userNum = prompt(" Guess a number between 1 and 100"); 
-    }
-    else if ( userNum < randomNum)
-    {
-        alert(`You guessed incorectly, your guess was to low, you have ${i} tries left to get it right.`);
-        userNum = prompt("Guess a number between 1 and 100");
-    }
-
+*/
