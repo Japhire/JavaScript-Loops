@@ -28,3 +28,14 @@ for ( let i = 4; i > 0; i-- ) {
         userNum = prompt("Guess a number between 1 and 100");
     }
 }
+    else if ( userNum > randomNum)
+    {
+        alert(`You guessed incorectly, your guess was to high. You have ${i} tries left to get it right.`);
+        userNum = prompt(" Guess a number between 1 and 100"); 
+    }
+    else if ( userNum < randomNum)
+    {
+        alert(`You guessed incorectly, your guess was to low, you have ${i} tries left to get it right.`);
+        userNum = prompt("Guess a number between 1 and 100");
+    }
+
