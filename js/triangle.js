@@ -11,10 +11,18 @@ while(isNaN(userNum)){
 // count from 1 to user's input
 // print to webpage a line of characters matching the current count
 
-for(let i=1; i<userNum; i++){
-   while(i<userNum){
-    document.getElementById("numbers").innerHTML = "* <br>"
+//print right side up triangle
+ for(let i=1; i<=userNum; i++){
+    for( j=1; j<=i; j++){
+        document.write('*')
    }
+   document.write('<br>')
 }
 
-
+//print upside down triangle
+for(let i=1; i<=userNum; i++){
+    for( j=userNum; j >= i ; j--){
+        document.write('*')
+   }
+   document.write('<br>')
+}
